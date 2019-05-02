@@ -23,7 +23,7 @@
     </route>
 
     <route url="/V1/msp-notifier-event/rule/:ruleId" method="DELETE">
-        <service class="MSP\NotifierEventApi\Api\RuleRepositoryInterface" method="delete"/>
+        <service class="MSP\NotifierEventApi\Api\RuleRepositoryInterface" method="deleteById"/>
         <resources>
             <resource ref="MSP_NotifierEventApi::rule_edit"/>
         </resources>
